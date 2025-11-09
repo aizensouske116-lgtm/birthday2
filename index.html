@@ -24,6 +24,15 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-10px); }
     }
+
+    /* Smooth fade for surprise message */
+    .fade {
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .fade.show {
+      opacity: 1;
+    }
   </style>
 </head>
 <body class="flex flex-col items-center justify-center text-center text-white p-6">
@@ -69,14 +78,14 @@
   </button>
 
   <!-- Hidden Surprise Message -->
-  <p id="surprise" class="hidden mt-6 text-2xl font-semibold text-yellow-200 glow">
+  <p id="surprise" class="fade mt-6 text-2xl font-semibold text-yellow-200 glow">
     🎈 You’re the best Father in the world! Love you always ❤️
   </p>
 
   <script>
     function showMessage() {
       const msg = document.getElementById('surprise');
-      msg.classList.toggle('hidden');
+      msg.classList.toggle('show');
     }
   </script>
 </body>
