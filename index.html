@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Dad!</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
@@ -26,35 +26,52 @@
     }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center text-center text-white">
-  <div class="p-6">
-    <h1 class="text-5xl md:text-7xl font-extrabold glow mb-4">🎉 Happy Birthday, <span class="text-yellow-300">Dad!</span> 🎉</h1>
-    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
- 
-You’re not just my father — you’re my guide, my hero, and my biggest blessing.
-Everything I am today is because of your love, your strength, and your wisdom.
-Thank you for always believing in me and standing by me through everything.
-I hope this year brings you the happiness and peace you truly deserve.
-Love you always ❤
-    </p>
+<body class="flex flex-col items-center justify-center text-center text-white p-6">
 
-    <lottie-player 
-      src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"  
-      background="transparent"  
-      speed="1"  
-      style="width: 300px; height: 300px;"  
-      loop autoplay
-      class="floating">
-    </lottie-player>
-
-    <button onclick="showMessage()" class="mt-10 px-6 py-3 bg-white text-pink-600 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
-      🎁 Click for a Surprise 🎁
-    </button>
-
-    <p id="surprise" class="hidden mt-6 text-2xl font-semibold text-yellow-200 glow">
-      🎈 You’re the best Father in the world! Love you always ❤️
-    </p>
+  <!-- Dad’s Photo -->
+  <div class="mb-8">
+    <img 
+      src="https://res.cloudinary.com/dcmtbcxap/image/upload/v1762709936/nazimdad_yi3bnf.jpg" 
+      alt="Dad Photo"
+      class="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-2xl border-4 border-white object-cover floating"
+    />
   </div>
+
+  <!-- Birthday Message -->
+  <h1 class="text-5xl md:text-7xl font-extrabold glow mb-4">
+    🎉 Happy Birthday, <span class="text-yellow-300">Dad!</span> 🎉
+  </h1>
+
+  <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+    You’re not just my father — you’re my guide, my hero, and my biggest blessing.  
+    Everything I am today is because of your love, your strength, and your wisdom.  
+    Thank you for always believing in me and standing by me through everything.  
+    I hope this year brings you the happiness and peace you truly deserve.  
+    Love you always ❤️
+  </p>
+
+  <!-- Animation -->
+  <lottie-player 
+    src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px;"
+    loop autoplay
+    class="floating">
+  </lottie-player>
+
+  <!-- Surprise Button -->
+  <button 
+    onclick="showMessage()" 
+    class="mt-10 px-6 py-3 bg-white text-pink-600 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+  >
+    🎁 Click for a Surprise 🎁
+  </button>
+
+  <!-- Hidden Surprise Message -->
+  <p id="surprise" class="hidden mt-6 text-2xl font-semibold text-yellow-200 glow">
+    🎈 You’re the best Father in the world! Love you always ❤️
+  </p>
 
   <script>
     function showMessage() {
